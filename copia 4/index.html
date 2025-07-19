@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>SIH COMPARTIR </title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+
+<header style="background-color: #FFD700; padding: 20px; position: relative; height: 120px;">
+  <!-- Logo del colegio a la izquierda -->
+  <img src="logo.png" alt="Escudo del colegio" style="position: absolute; top: 10px; left: 20px; height: 80px;">
+
+
+  <!-- Texto centrado -->
+<div style="text-align: center;">
+  <h1 style="color: #3358ff; margin: 0;">COLEGIO SANTA ISABEL DE HUNGRÍA SEDE COMPARTIR</h1>
+  <h1 style="color: #3358ff; margin: 0;">TECNOLOGÍA INNOVACIÓN Y DESARROLLO</h1>
+
+  <!-- Fecha y hora en vivo -->
+  <p id="fechaHora" style="color: #002147; font-weight: bold; margin-top: 10px;"></p>
+</div>
+
+<!-- Script para mostrar día, fecha y hora -->
+<script>
+  function actualizarFechaHora() {
+    const opciones = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const ahora = new Date();
+    const fecha = ahora.toLocaleDateString('es-CO', opciones);
+    const hora = ahora.toLocaleTimeString('es-CO');
+
+    document.getElementById('fechaHora').innerHTML = `${fecha} - ${hora}`;
+  }
+
+  // Actualiza cada segundo
+  setInterval(actualizarFechaHora, 1000);
+  actualizarFechaHora(); // Llamada inicial
+</script>
+
+  <!-- Foto del profe protegida -->
+  <img src="ever.jpg" alt="Foto del profesor"
+    style="position: absolute; top: 10px; right: 20px; height: 80px; border-radius: 50%; pointer-events: none;"
+    oncontextmenu="return false;" draggable="false">
+</header>
+
+
+</header>
+
+
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="grado7.html">7°</a>
+        <a href="grado8.html">8°</a>
+        <a href="grado9.html">9°</a>
+        <a href="grado10.html">10°</a>
+        <a href="grado11.html">11°</a>
+	<a href="TECNICAS.html">TÉCNICAS°</a>
+    </nav>   
+     
+    </div>
+
+<video autoplay muted loop style="width:100%; max-height:700px; object-fit: cover;">
+  <source src="videos/windows.mp4" type="video/mp4">
+  
+</video>
+
+    <div class="footer">
+        © 2025 Colegio Compartir Área de Sistemas y Tecnología - Docente: Ever Muñoz Gómez
+    </div>
+
+</body>
+</html>
+
+
+
+

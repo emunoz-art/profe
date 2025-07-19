@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>PLAN DE ESTUDIO TECNICAS</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>TECNICAS - Plan de Estudio</h1>
+    </header>
+    <nav>
+        <a href="../index.html">Inicio</a>
+        <a href="../TECNICAS.html">Volver a TECNICAS</a>
+    </nav>
+
+    <h2 style="text-align: center; color: #002147;">PLAN DE ESTUDIO POR PERIODO</h2>
+
+<!-- Botones para cambiar de PDF -->
+<div style="text-align: center; margin-bottom: 10px;">
+  <button onclick="mostrarPDF('periodo1.pdf')">Periodo 1</button>
+  <button onclick="mostrarPDF('periodo2.pdf')">Periodo 2</button>
+  <button onclick="mostrarPDF('periodo3.pdf')">Periodo 3</button>
+</div>
+
+<!-- Contenedor del visor PDF -->
+<div style="display: flex; justify-content: center;">
+  <iframe id="visorPDF" src="periodo1.pdf" width="80%" height="600px" style="border: 2px solid #002147;"></iframe>
+</div>
+
+<!-- Script para cambiar el PDF mostrado -->
+<script>
+  function mostrarPDF(archivo) {
+    document.getElementById('visorPDF').src = archivo;
+  }
+</script>
+
+
+    <div class="footer">
+        © 2025 Colegio Compartir
+    </div>
+
+</body>
+</html>

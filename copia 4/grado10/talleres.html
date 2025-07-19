@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Talleres del Profesor - Colegio Compartir</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #f2f2f2;
+    }
+    header {
+      background-color: #002147;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #014aa2;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      text-align: center;
+      padding: 30px 20px 10px 20px;
+    }
+    iframe {
+      border: none;
+    }
+    .formulario-box {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #ffffff;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      border: 1px solid #ccc;
+    }
+    .descarga-box {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 30px;
+      background-color: #f4f8fb;
+      border: 1px solid #d1e0eb;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      text-align: center;
+    }
+    .descarga-box a {
+      display: inline-block;
+      padding: 14px 28px;
+      background-color: #002147;
+      color: white;
+      font-size: 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .descarga-box a:hover {
+      background-color: #014aa2;
+    }
+    .footer {
+      background-color: #002147;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Colegio Compartir - Talleres del Profesor</h1>
+  </header>
+
+  <nav>
+    <a href="../index.html">Inicio</a>
+    <a href="../grado10.html">Volver a Grado 10</a>
+  </nav>
+
+  <div class="container">
+    <h2 style="color: #002147;">TEST VOCACIONAL 2025</h2>
+  </div>
+
+
+
+  <!------ Tarjeta visual para descarga del taller grado 10 ------>
+
+<div style="
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: #fdfdfd;
+  border-radius: 15px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: Arial, sans-serif;
+">
+
+  <!-- Icono o miniatura -->
+  <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Microsoft_Excel_2013-2019_logo.svg" 
+       alt="Excel" 
+       style="width: 80px; height: 80px;">
+
+
+  <!-- Información del taller descarga -->
+
+  <div style="flex: 1;">
+    <h3 style="margin: 0; color: #002147;">Taller Vocacional 2025 - Grado 10°</h3>
+    <p style="margin: 8px 0 16px; color: #444;">Descarga el archivo de Excel con las actividades vocacionales para este grado.</p>
+
+    <a href="test2025.xlsx" download
+       style="
+         background-color: #002147;
+         color: white;
+         padding: 10px 20px;
+         text-decoration: none;
+         border-radius: 8px;
+         font-weight: bold;
+         transition: background-color 0.3s ease;
+       "
+       onmouseover="this.style.backgroundColor='#014aa2'"
+       onmouseout="this.style.backgroundColor='#002147'">
+      📥 Descargar Excel
+    </a>
+  </div>
+</div>
+
+
+<!------ fin de la Tarjeta visual para descarga del taller grado 10 ------>
+
+<!----------------------------------------0000000000------------------------->
+
+<!-- Selector de subgrado -->
+<div class="formulario-box">
+  <label for="subgrado" style="font-weight: bold; font-size: 18px; display: block; margin-bottom: 10px; color: #002147;">
+    Para entregar el archivo, Selecciona el grado:
+  </label>
+  <select id="subgrado" onchange="mostrarFormulario()" style="padding: 10px; font-size: 16px; border-radius: 8px; width: 100%; max-width: 300px;">
+    <option value="">-- Selecciona --</option>
+    <option value="f10_1">10-1</option>
+    <option value="f10_2">10-2</option>
+    <option value="f10_3">10-3</option>
+    <option value="f10_4">10-4</option>
+  </select>
+</div>
+
+<!-- Contenedores ocultos por cada formulario -->
+<div id="f10_1" class="formulario-box" style="display: none;">
+  <iframe src="https://docs.google.com/forms/d/1uIZbxd4HtF3LcGrZ3rKf3RJJvhAMurA8FezXvZy1c-E/viewform?embedded=true" width="100%" height="700">Cargando…</iframe>
+</div>
+
+<div id="f10_2" class="formulario-box" style="display: none;">
+  <iframe src="https://docs.google.com/forms/d/1k4ssVie4t_Li6qjkpY-sjlplp0LBFVlLd35HQUfqZzQ/viewform?embedded=true" width="100%" height="700">Cargando…</iframe>
+</div>
+
+<div id="f10_3" class="formulario-box" style="display: none;">
+  <iframe src="https://docs.google.com/forms/d/139w7Z6eczOkA4ujPi9rXpVpUQA8--JLdri8qasNVYbw/viewform?embedded=true" width="100%" height="700">Cargando…</iframe>
+</div>
+
+<div id="f10_4" class="formulario-box" style="display: none;">
+  <iframe src="https://docs.google.com/forms/d/1L2LoMyqSzHkqj-T0N-lgHRm6JXYLTLCiJDgdRqPmVUQ/viewform?embedded=true" width="100%" height="700">Cargando…</iframe>
+</div>
+
+<script>
+  function mostrarFormulario() {
+    const valor = document.getElementById("subgrado").value;
+    const formularios = document.querySelectorAll(".formulario-box iframe");
+    const contenedores = document.querySelectorAll(".formulario-box");
+
+    // Oculta todos los contenedores excepto el del selector
+    contenedores.forEach((div, index) => {
+      if (index > 0) div.style.display = "none";
+    });
+
+    if (valor) {
+      document.getElementById(valor).style.display = "block";
+    }
+  }
+</script>
+
+
+<!-----------------------------------00000000-------------------------------->
+
+
+
+
+
+
+
+  <div class="footer">
+    © 2025 Colegio Compartir
+  </div>
+
+</body>
+</html>
